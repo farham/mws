@@ -1,0 +1,65 @@
+/*
+.container {
+ display: grid;
+ grid-template-columns: 100px 100px 100px 100px;
+}
+
+.menu {
+ background: lightblue;
+ grid-column-start: 1;
+ grid-column-end: 4;
+}
+
+
+.header {
+ background: lavenderblush;
+ grid-column-start: 1;
+ grid-column-end: 3;
+}
+.sidebar {
+ background: lightyellow;
+ grid-column-start: 1;
+ grid-column-end: 2;
+}
+.konten {
+ background: lightpink;
+ grid-column-start: 2;
+ grid-column-end: 3;
+}
+.footer {
+ background: lightcyan;
+ grid-column-start: 1;
+ grid-column-end: 3;
+}
+
+Cara Lainnya dibawah
+*/
+
+.container {
+ display: grid;
+ grid-template-columns: 100px 100px 100px 100px;
+ grid-template-rows: 50px 50px 400px 50px;
+}
+.menu {
+ background: lightblue;
+ grid-column: 1/-1;
+}
+.header {
+ background: lavenderblush;
+ grid-column: 1/-1;
+}
+.sidebar {
+ background: lightyellow;
+ grid-column: 1/2
+}
+.konten {
+ background: lightpink;
+ grid-column-start: 2;
+ grid-column-end: 5;
+ display:grid;
+ grid-gap: 4px;
+}
+.footer {
+ background: lightcyan;
+ grid-column: 1/-1;
+}
